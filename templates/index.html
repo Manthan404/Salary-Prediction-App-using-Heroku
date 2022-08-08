@@ -60,6 +60,8 @@
     <link rel= "stylesheet" type= "text/css" href= "{{ url_for('static',filename='styles/home.css') }}">
     <link rel= "stylesheet" type= "text/css" href= "{{ url_for('static',filename='styles/style.css') }}">
 
+    <!-- <link rel="stylesheet" type="text/css" href="../static/styles/home.css">
+    <link rel="stylesheet" type="text/css" href="../static/styles/style.css"> -->
 
     
     
@@ -68,18 +70,20 @@
     <div class="login">
       <link rel= "stylesheet" type= "text/css" href= "{{ url_for('static',filename='styles/home.css') }}">
     
+      <!-- <link rel="stylesheet" type="text/css" href="../static/styles/home.css"> -->
 
+      
       <div class="home-container">
-
+        <form action="{{ url_for('predict')}}" method="post">
         <!-- <div class="home-container1">
           <h1 class="home-text heading">Predict Your Salary</h1>
         </div> -->
 
         <div class="home-container1">
-          <h1 class="home-text  heading">Predict Your Salary</h1>
+          <h1 class="home-text">Predict Your Salary</h1>
         </div>
 
-        <form action="{{ url_for('predict')}}" method="post">
+       
 
         <div class="home-container2">
           
@@ -115,21 +119,21 @@
         
 
         </div>
-
-    
-
-      </form>
   
-      <footer class="home-footer">
+      <!-- <footer class="home-footer">
         <span class="home-text7">
           © 2022 Predictly, All Rights Reserved by Manthan Patel.
         </span>
         <div class="home-icon-group">
         </div>
       </footer>
+       -->
       
-        
+      </form>
+      
       </div>
+
+    
     </div>
   </body>
 </html>
